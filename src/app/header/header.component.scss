@@ -1,0 +1,49 @@
+/* colors */
+$primary-blue: #2cb5e8;
+
+$primary-blue-light: #1fc8db;
+$primary-blue-lightest: #0fb8ad;
+
+/* fonts */
+$font-size: 1.8em;
+$icon-size: 1.7em;
+
+.wrapper {
+  vertical-align: middle;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  height: 100%;
+  padding: 10px;
+  background: $primary-blue;
+  background: -webkit-linear-gradient(141deg, $primary-blue-lightest 0%, $primary-blue-light 51%, $primary-blue 75%);
+  background: -o-linear-gradient(141deg, $primary-blue-lightest 0%, $primary-blue-light 51%, $primary-blue 75%);
+  background: -moz-linear-gradient(141deg, $primary-blue-lightest 0%, $primary-blue-light 51%, $primary-blue 75%);
+  background: linear-gradient(141deg, $primary-blue-lightest 0%, $primary-blue-light 51%, $primary-blue 75%);
+  color: white;
+}
+
+.icon-wrapper {
+  display: inline-block;
+  img {
+    height: $icon-size;
+  }
+}
+
+.title {
+  font-weight: bold;
+  font-size: $font-size;
+  display: inline-block;
+}
+
+.nav-bar {
+  text-align: right;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 1.2em;
+}
+
+.nav-item {
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 20px;
+}
