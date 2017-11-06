@@ -1,11 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router'
+import { AboutModule } from "./about/about.module";
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AppRouterModule } from './/app-router.module';
 
 /* Feature Modules */
 
@@ -17,12 +18,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     PageNotFoundComponent
   ],
   imports: [
+    AboutModule,
     BrowserModule,
-    RouterModule.forRoot([
-      {path: ''},
-      {path: '', redirectTo: '', pathMatch: 'full'},
-      {path: '**', component: PageNotFoundComponent},
-    ], {useHash: true})
+    AppRouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
